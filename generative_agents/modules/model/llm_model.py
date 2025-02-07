@@ -191,7 +191,9 @@ class OllamaLLMModel(LLMModel):
         messages = [{"role": "user", "content": prompt}]
         response = self.ollama_chat(messages=messages, temperature=temperature, stream=False)
         if response and len(response["choices"]) > 0:
-            return response["choices"][0]["message"]["content"]
+            answer = response["choices"][0]["message"]["content"]
+            answer = re.sub('<think>.*</think>\n\n', '', answer, re.S, flags=re.DOTALL) # 主要针对DeepSeek，去除其返回的思考部分
+            return answer
         return ""
 
     @classmethod
