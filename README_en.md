@@ -7,7 +7,7 @@
 ### 1.1 pull the source code:
 
 ```
-git clone https://github.com/x-glacier/GenerativeAgentsCN.git
+git clone https://github.com/LoveTheStar7/GenerativeAgentsCN.git
 cd GenerativeAgentsCN
 ```
 
