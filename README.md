@@ -31,7 +31,7 @@ Generative Agents的原始代码工程化程度较低，难以持续维护或拓
 ### 1.1 获取代码：
 
 ```
-git clone https://github.com/x-glacier/GenerativeAgentsCN.git
+git clone https://github.com/LoveTheStar7/GenerativeAgentsCN.git
 cd GenerativeAgentsCN
 ```
 
